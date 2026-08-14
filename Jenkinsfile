@@ -17,7 +17,7 @@ node {
 
     stage('Maven Build') {
         echo "Building application..."
-        sh "mvn clean package -DskipTests"
+        sh "mvn clean package"
     }
 
     stage('Get Docker Credentials') {
